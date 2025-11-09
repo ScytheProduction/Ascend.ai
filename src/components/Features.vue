@@ -1,16 +1,14 @@
 <template>
-  <section class="features" id="features">
-    <div class="container">
-      <div class="section-header">
-        <h2>Why Our Curriculum Works</h2>
-        <p>The Profit Advantage</p>
-      </div>
-      <div class="features-grid">
-        <div v-for="(feature, index) in features" :key="index" class="feature-card">
-          <div class="feature-icon">{{ feature.icon }}</div>
-          <h3>{{ feature.title }}</h3>
-          <p>{{ feature.description }}</p>
-        </div>
+  <section class="py-20 px-5 relative" id="features">
+    <div class="text-center mb-20 max-w-7xl mx-auto">
+      <h2 class="text-5xl font-bold mb-3 font-['Sora']">Why Our Curriculum Works</h2>
+      <p class="text-lg text-gray-500">The Profit Advantage</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+      <div v-for="(feature, index) in features" :key="index" class="bg-white border-2 border-gray-200 rounded-xl p-10 transition-all hover:border-[#c026d3] hover:-translate-y-1 hover:shadow-lg text-center relative">
+        <div class="feature-icon text-5xl mb-5 inline-block">{{ feature.icon }}</div>
+        <h3 class="text-xl font-semibold mb-3">{{ feature.title }}</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">{{ feature.description }}</p>
       </div>
     </div>
   </section>
