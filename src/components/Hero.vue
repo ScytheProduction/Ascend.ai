@@ -1,52 +1,39 @@
 <template>
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">
-            Stop Learning AI Theory.<br>
-            <span class="gradient-text">Start Generating AI Profit</span>
-          </h1>
-          <p class="hero-subtitle">
-            The definitive, progressive curriculum designed to turn AI tools into automated revenue streams. Master the blueprint for high-demand ventures like AI Automation Agencies and AI-Driven E-commerce.
-          </p>
-          <div class="hero-cta">
-            <button class="btn btn-primary btn-lg">Access Tier 1 Free for 7 Days</button>
-            <button class="btn btn-secondary btn-lg">Watch Demo</button>
-          </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <span class="stat-number">10,000+</span>
-              <span class="stat-label">Students</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">$5M+</span>
-              <span class="stat-label">Generated</span>
-            </div>
-            <div class="stat">
-              <span class="stat-number">4.9★</span>
-              <span class="stat-label">Rating</span>
-            </div>
-          </div>
+  <section class="min-h-screen flex items-center py-20 px-5 relative overflow-hidden">
+    <!-- Background geometric shapes -->
+    <div class="shape-octagon"></div>
+    <div class="shape-sphere"></div>
+    <div class="shape-diamond"></div>
+    <div class="shape-ring"></div>
+
+    <div class="grid md:grid-cols-2 gap-15 items-center max-w-7xl mx-auto w-full relative z-10">
+      <div>
+        <h1 class="text-5xl lg:text-6xl leading-tight mb-6 font-bold font-['Sora']">
+          Master the Funnel: <span class="gradient-text">AI-Powered Profits.</span>
+        </h1>
+        <p class="text-lg text-gray-600 mb-10 leading-relaxed max-w-xl">
+          Learn to seamlessly integrate generative AI into your marketing stack, automate sales, and scale your online business using platforms like Kartra and Kajabi.
+        </p>
+        <div class="flex gap-5 mb-15 flex-wrap">
+          <button class="px-10 py-4 bg-gradient-to-r from-[#22d3ee] to-[#0891b2] text-white rounded-xl font-semibold text-base shadow-xl shadow-cyan-500/30 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/40 transition-all">Start Your Free Trial</button>
+          <button class="px-10 py-4 bg-gray-100 text-gray-700 border border-gray-300 rounded-xl font-semibold hover:bg-gray-200 hover:-translate-y-1 transition-all">Watch Demo</button>
         </div>
-        <div class="hero-visual">
-          <div class="gradient-orb orb-1"></div>
-          <div class="gradient-orb orb-2"></div>
-          <div class="code-window">
-            <div class="code-header">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="code-content">
-              <div class="code-line"><span class="token-keyword">const</span> profit = await generateAI<span class="token-punc">();</span></div>
-              <div class="code-line"><span class="token-keyword">if</span> (profit <span class="token-punc">></span> <span class="token-number">100k</span>) <span class="token-punc">{</span></div>
-              <div class="code-line"><span class="code-indent">scale<span class="token-punc">();</span></span></div>
-              <div class="code-line"><span class="token-punc">}</span></div>
-            </div>
+        <div class="flex gap-15">
+          <div class="flex flex-col gap-2">
+            <span class="text-3xl font-bold text-[#c026d3]">10,000+</span>
+            <span class="text-sm text-gray-500 uppercase tracking-wide">Students</span>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="text-3xl font-bold text-[#c026d3]">$5M+</span>
+            <span class="text-sm text-gray-500 uppercase tracking-wide">Generated</span>
+          </div>
+          <div class="flex flex-col gap-2">
+            <span class="text-3xl font-bold text-[#c026d3]">4.9★</span>
+            <span class="text-sm text-gray-500 uppercase tracking-wide">Rating</span>
           </div>
         </div>
       </div>
+      <div></div>
     </div>
   </section>
 </template>
