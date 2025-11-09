@@ -1,11 +1,14 @@
 <template>
-  <div class="app">
-    <Header />
-    <Hero />
-    <Curriculum />
-    <Features />
-    <CTA />
-    <Footer />
+  <div class="min-h-screen bg-[#fefefe] text-gray-900 font-['Inter'] relative overflow-x-hidden">
+    <StartupAnimation />
+    <div id="main-content" class="opacity-0 transition-opacity duration-500">
+      <Header />
+      <Hero />
+      <Curriculum />
+      <Features />
+      <CTA />
+      <Footer />
+    </div>
   </div>
 </template>
 
