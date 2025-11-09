@@ -54,45 +54,76 @@ export default {
     return {
       tiers: [
         {
-          badge: 'Phase 1',
-          title: 'AI Fundamentals for Rapid Income',
-          focus: 'Leveraging accessible AI (ChatGPT, Midjourney) for high-leverage, immediate tasks',
-          highlights: [
-            'Automated content generation',
-            'Market analysis & research',
-            'Rapid prototyping',
-            'Micro-service launch'
+          badge: 'TIER 1',
+          title: 'Foundation Explorer',
+          focus: 'Focus on Core Setup. Learn to build landing pages, integrate basic AI content generation (headlines, email copy), and structure a simple sales funnel.',
+          modules: [
+            'AI Copywriting Essentials',
+            'Landing Page Architecture',
+            'Basic Email Automation'
           ],
-          outcome: 'Launching your first low-friction, high-margin AI service in under 14 days.',
+          color: 'magenta',
           featured: false
         },
         {
-          badge: 'Phase 2',
-          title: 'AI E-commerce Automation',
-          focus: 'Implementing AI for the entire e-commerce lifecycle on Shopify',
-          highlights: [
-            'Product research automation',
-            'AI listing creation',
-            'Dynamic ad copy generation',
-            'AI customer service'
+          badge: 'TIER 2',
+          title: 'Profit Accelerator',
+          focus: 'Focus on Optimization & Scaling. Deep dive into advanced AI-driven audience segmentation, A/B testing, and building complex, multi-stage funnels with upsells/downsells.',
+          modules: [
+            'Advanced Prompt Engineering',
+            'Data-Driven Funnel Optimization',
+            'Personalized AI Outreach'
           ],
-          outcome: 'An automated e-commerce engine that scales with minimal manual input.',
+          color: 'cyan',
           featured: true
         },
         {
-          badge: 'Phase 3',
-          title: 'The AI Automation Agency',
-          focus: 'Building and selling custom AI workflows to businesses',
-          highlights: [
-            'Zapier & Make integration',
-            'Custom LLM deployment',
-            'Workflow automation',
-            'Retainer contracts'
+          badge: 'TIER 3',
+          title: 'Autonomous Architect',
+          focus: 'Focus on Full Automation & Strategy. Master connecting multiple AI services, setting up automated product creation (e.g., course outlines, eBooks), and running the business on autopilot.',
+          modules: [
+            'RAG Implementation for Content',
+            'Autonomous Lead Scoring',
+            'Platform Integration Mastery'
           ],
-          outcome: 'Launching a high-profit AI Automation Services business with $5k+ monthly retainers.',
+          color: 'lime',
           featured: false
         }
       ]
+    }
+  },
+  methods: {
+    getTierBadgeClasses(color) {
+      const colors = {
+        magenta: 'bg-fuchsia-100 text-fuchsia-700',
+        cyan: 'bg-cyan-100 text-cyan-700',
+        lime: 'bg-lime-100 text-lime-700'
+      };
+      return colors[color];
+    },
+    getTierTitleColor(color) {
+      const colors = {
+        magenta: 'text-[#c026d3]',
+        cyan: 'text-[#0891b2]',
+        lime: 'text-[#65a30d]'
+      };
+      return colors[color];
+    },
+    getTierIconColor(color) {
+      const colors = {
+        magenta: 'text-[#c026d3]',
+        cyan: 'text-[#0891b2]',
+        lime: 'text-[#65a30d]'
+      };
+      return colors[color];
+    },
+    getTierButtonClasses(color) {
+      const colors = {
+        magenta: 'bg-gradient-to-r from-[#c026d3] to-[#9333ea] hover:shadow-lg hover:-translate-y-0.5',
+        cyan: 'bg-gradient-to-r from-[#22d3ee] to-[#0891b2] hover:shadow-lg hover:-translate-y-0.5',
+        lime: 'bg-gradient-to-r from-[#a3e635] to-[#65a30d] hover:shadow-lg hover:-translate-y-0.5'
+      };
+      return colors[color];
     }
   }
 }
