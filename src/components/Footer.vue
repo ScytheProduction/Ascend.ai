@@ -1,47 +1,45 @@
 <template>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h4>AI Profit</h4>
-          <p>Master the blueprint for high-demand AI ventures and build your six-figure business.</p>
-        </div>
-        <div class="footer-section">
-          <h4>Curriculum</h4>
-          <ul>
-            <li><a href="#curriculum">Phase 1: Fundamentals</a></li>
-            <li><a href="#curriculum">Phase 2: E-commerce</a></li>
-            <li><a href="#curriculum">Phase 3: Automation Agency</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Privacy</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Community</h4>
-          <ul>
-            <li><a href="#">Discord</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Newsletter</a></li>
-          </ul>
-        </div>
+  <footer class="bg-gradient-to-b from-gray-50 to-gray-100 border-t border-gray-200 pt-20 pb-10 px-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-15 mb-15 max-w-7xl mx-auto">
+      <div>
+        <h4 class="text-base font-semibold mb-5">Ascend.Pro</h4>
+        <p class="text-gray-600 text-sm leading-relaxed">Master AI-powered funnels and marketing automation to scale your online business.</p>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 AI Profit. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="#">Terms of Service</a>
-          <span>·</span>
-          <a href="#">Privacy Policy</a>
-          <span>·</span>
-          <a href="#">Cookie Policy</a>
-        </div>
+      <div>
+        <h4 class="text-base font-semibold mb-5">Curriculum</h4>
+        <ul class="list-none">
+          <li class="mb-3"><a href="#curriculum" class="text-gray-600 text-sm hover:text-[#c026d3] transition-colors">Tier 1: Foundation Explorer</a></li>
+          <li class="mb-3"><a href="#curriculum" class="text-gray-600 text-sm hover:text-[#c026d3] transition-colors">Tier 2: Profit Accelerator</a></li>
+          <li class="mb-3"><a href="#curriculum" class="text-gray-600 text-sm hover:text-[#c026d3] transition-colors">Tier 3: Autonomous Architect</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-base font-semibold mb-5">Company</h4>
+        <ul class="list-none">
+          <li class="mb-3"><a href="#" class="text-gray-600 text-sm hover:text-[#c026d3] transition-colors">About</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-600 text-sm hover:text-[#c026d3] transition-colors">Blog</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-600 text-sm hover:text-[#c026d3] transition-colors">Contact</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-600 text-sm hover:text-[#c026d3] transition-colors">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-base font-semibold mb-5">Community</h4>
+        <ul class="list-none">
+          <li class="mb-3"><a href="#" class="text-gray-600 text-sm hover:text-[#c026d3] transition-colors">Discord</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-600 text-sm hover:text-[#c026d3] transition-colors">Twitter</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-600 text-sm hover:text-[#c026d3] transition-colors">LinkedIn</a></li>
+          <li class="mb-3"><a href="#" class="text-gray-600 text-sm hover:text-[#c026d3] transition-colors">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-gray-200 pt-10 flex justify-between items-center flex-wrap gap-5 max-w-7xl mx-auto">
+      <p class="text-gray-500 text-xs">&copy; 2024 Ascend.Pro. All rights reserved.</p>
+      <div class="flex items-center gap-3 text-xs">
+        <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors">Terms of Service</a>
+        <span class="text-gray-400">·</span>
+        <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors">Privacy Policy</a>
+        <span class="text-gray-400">·</span>
+        <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors">Cookie Policy</a>
       </div>
     </div>
   </footer>
