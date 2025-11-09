@@ -56,113 +56,33 @@ export default {
 }
 </script>
 
-<style scoped>
-.features {
-  position: relative;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.section-header h2 {
-  font-size: 48px;
-  margin-bottom: 12px;
-}
-
-.section-header p {
-  font-size: 18px;
-  color: #9ca3af;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-}
-
-.feature-card {
-  background: rgba(31, 41, 55, 0.2);
-  border: 1px solid rgba(59, 130, 246, 0.1);
-  border-radius: 12px;
-  padding: 40px;
-  transition: all 0.3s;
-  text-align: center;
-  position: relative;
-}
-
-.feature-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent);
-}
-
-.feature-card:hover {
-  border-color: rgba(59, 130, 246, 0.3);
-  background: rgba(31, 41, 55, 0.4);
-  transform: translateY(-4px);
-}
-
+<style>
 .feature-icon {
-  font-size: 48px;
-  margin-bottom: 20px;
-  display: inline-block;
   animation: bounce 3s ease-in-out infinite;
 }
 
-.feature-card:nth-child(2) .feature-icon {
+.bg-white:nth-child(2) .feature-icon {
   animation-delay: 0.2s;
 }
 
-.feature-card:nth-child(3) .feature-icon {
+.bg-white:nth-child(3) .feature-icon {
   animation-delay: 0.4s;
 }
 
-.feature-card:nth-child(4) .feature-icon {
+.bg-white:nth-child(4) .feature-icon {
   animation-delay: 0.6s;
 }
 
-.feature-card:nth-child(5) .feature-icon {
+.bg-white:nth-child(5) .feature-icon {
   animation-delay: 0.8s;
 }
 
-.feature-card:nth-child(6) .feature-icon {
+.bg-white:nth-child(6) .feature-icon {
   animation-delay: 1s;
 }
 
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
-}
-
-.feature-card h3 {
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-
-.feature-card p {
-  color: #9ca3af;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .section-header h2 {
-    font-size: 36px;
-  }
-
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .feature-card {
-    padding: 30px;
-  }
 }
 </style>
