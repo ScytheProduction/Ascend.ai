@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import StartupAnimation from './components/StartupAnimation.vue'
 import Header from './components/Header.vue'
 import Hero from './components/Hero.vue'
 import Curriculum from './components/Curriculum.vue'
@@ -23,6 +24,7 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
+    StartupAnimation,
     Header,
     Hero,
     Curriculum,
